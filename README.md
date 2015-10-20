@@ -7,7 +7,7 @@ Welcome to my API.
 ##Dataset Description
 The dataset came from (http://www.gmit.ie/)
 
-```
+```c
 int myfunction(int t) {
   return c*c;
 }
