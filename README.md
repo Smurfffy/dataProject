@@ -1,5 +1,5 @@
 # Data Project
-** Alan Murphy **
+**Alan Murphy**
 
 ##Introduction
 Welcome to my API.
