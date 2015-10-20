@@ -5,4 +5,4 @@
 Welcome to my API.
 
 ##Dataset Description
-The dataset came from (GMIT)(http://www.gmit.ie/)
+The dataset came from (http://www.gmit.ie/)
