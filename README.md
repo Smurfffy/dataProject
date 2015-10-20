@@ -9,6 +9,6 @@ The dataset came from (http://www.gmit.ie/)
 
 ```
 int myfunction(int t) {
-  return c*c
+  return c*c;
 }
 ```
