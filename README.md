@@ -46,19 +46,18 @@ An example of a response would be:
 
 ## Displaying a Specific Tennis Court by Location
 You can get data on a Specific Tennis Court using a GET method at the following URL:
-*http://tennisCourtsGalway.ie/location[location]*
+*http://tennisCourtsGalway.ie/tennisCourt/[location]*
 where you replace [location] with the location name of the tennis court. This is very usefull for people who already know the name of the location but not the coordinates.
 
 Where there is a space and *underscore (_)* is needed.
 
 For example, the URL:
-*http://tennisCourtsGalway.ie/Crestwood_Ballinfoyle*
+*http://tennisCourtsGalway.ie/tennisCourt/Crestwood_Ballinfoyle*
 will display the data of the Tennis Court in Crestwood, Ballinfoyle.
 The data will be returned in JSON format, with the following properties for each car:
 
 | Field         | Description                 |
 | ------------- |:---------------------------:|
-| Object ID     | 1                           |
 | Location      | Crestwood, Ballinfoyle      |
 | Latitude      | 53.293817                   |
 | Longitude     | -9.04786                    |
@@ -69,8 +68,7 @@ The data will be returned in JSON format, with the following properties for each
 
 An example of a response would be:
 ```JSON
-[ {"Object ID": 1, 
-   "Location": "Crestwood, Ballinfoyle.",
+[ {"Location": "Crestwood, Ballinfoyle.",
    "Latitude": 53.293817,
    "Longitude": -9.04786,
    "East ITM": 530141.7857,
