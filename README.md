@@ -18,8 +18,8 @@ There are 10 values on each line, which are as follows:
 | Y Coordinate  | Identifies the y Coordinate                                 |
 | Object ID     | ID for each row                                             |
 | Location      | Location name of the tennis court                           |
-| Longitude     | Determines location of tennis court                         |
 | Latitude      | Determines location of tennis court                         |
+| Longitude     | Determines location of tennis court                         |
 | East ITM      | Irish Transverse Mercator coordinate system                 |
 | North ITM     | Irish Transverse Mercator coordinate system                 |
 | East IG       | Irish Grid Reference System                                 |
@@ -42,4 +42,39 @@ An example of a response would be:
    "Location": "Westside Sports Ground",
    "Location": "Doughiska Park, Doughiska Rd.",
    "Location": "Roscam Park, Roscam"}]
+```
+
+## Displaying a Specific Tennis Court by Location
+You can get data on a Specific Tennis Court using a GET method at the following URL:
+*http://tennisCourtsGalway.ie/location[location]*
+where you replace [location] with the location name of the tennis court. This is very usefull for people who already know the name of the location but not the coordinates.
+
+Where there is a space and *underscore (_)* is needed.
+
+For example, the URL:
+*http://tennisCourtsGalway.ie/Crestwood_Ballinfoyle*
+will display the data of the Tennis Court in Crestwood, Ballinfoyle.
+The data will be returned in JSON format, with the following properties for each car:
+
+| Field         | Description                 |
+| ------------- |:---------------------------:|
+| Object ID     | 1                           |
+| Location      | Crestwood, Ballinfoyle      |
+| Latitude      | 53.293817                   |
+| Longitude     | -9.04786                    |
+| East ITM      | 530141.7857                 |
+| North ITM     | 727569.4171                 |
+| East IG       | 130175.9332                 |
+| North IG      | 227540.7431                 |
+
+An example of a response would be:
+```JSON
+[ {"Object ID": 1, 
+   "Location": "Crestwood, Ballinfoyle.",
+   "Latitude": 53.293817,
+   "Longitude": -9.04786,
+   "East ITM": 530141.7857,
+   "North ITM": 727569.4171,
+   "East IG": 130175.9332,
+   "North IG": 227540.7431}]
 ```
