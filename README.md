@@ -27,7 +27,7 @@ There are 10 values on each line, which are as follows:
 
 ## List of Tennis Courts
 You can get a list of Tennis courts in Galway using the GET method at the following URL:
-*http://tennisCourtsGalway/location*
+*http://tennisCourtsGalway.ie/location*
 
 The data will be returned in JSON format, with the following properties for each Tennis Court:
 
