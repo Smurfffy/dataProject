@@ -24,3 +24,21 @@ There are 10 values on each line, which are as follows:
 | North ITM     | Irish Transverse Mercator coordinate system                 |
 | East IG       | Irish Grid Reference System                                 |
 | North IG      | Irish Grid Reference System                                 |
+
+## List of Tennis Courts
+You can get a list of Tennis courts in Galway using the GET method at the following URL:
+*http://tennisCourtsGalway/location*
+
+The data will be returned in JSON format, with the following properties for each Tennis Court:
+| Field         | Description                                                 |
+| ------------- |:-----------------------------------------------------------:|
+| Location      | Location name of the tennis court                           |
+   
+An example of a response would be:
+```JSON
+[ {"Location": "Crestwood, Ballinfoyle", 
+   "Location": "McGraths field, Shangort Rd.",
+   "Location": "Westside Sports Ground",
+   "Location": "Doughiska Park, Doughiska Rd.",
+   "Location": "Roscam Park, Roscam"}]
+```
