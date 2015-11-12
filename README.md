@@ -76,3 +76,16 @@ An example of a response would be:
    "East IG": 130175.9332,
    "North IG": 227540.7431}]
 ```
+
+##Adding New Tennis Courts to the Dataset
+With the expansion of Galway City it is very possible that new tennis courts could be built. Because of this we need to make it possible to be able to add new Tennis Courts to the Data Set. We do this using the POST method.
+
+The POST methods URL would be something similar to:
+*http://tennisCourtsGalway.ie/addTennisCourt*
+
+An example of the HTTP POST method message:
+```HTTP
+POST /tennisCourtsGalway/addTennisCourt HTTP/1.1
+Host: tennisCourtsGalway.ie
+x="-8.03433"&y="56.7385"&objectid="6"&location="eyreSquare"&lat="56.7385"&long="-8.03433"&eastitm="565231.4"&northitm="776355.1"&eastig="172932.2"&northig="273896.5"
+```
