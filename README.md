@@ -54,7 +54,7 @@ Where there is a space and *underscore (_)* is needed.
 For example, the URL:
 *http://tennisCourtsGalway.ie/tennisCourt/Crestwood_Ballinfoyle*
 will display the data of the Tennis Court in Crestwood, Ballinfoyle.
-The data will be returned in JSON format, with the following properties for each car:
+The data will be returned in JSON format, with the following properties for each Tennis Court:
 
 | Field         | Description                 |
 | ------------- |:---------------------------:|
@@ -105,7 +105,7 @@ Such a URL would be:
 204 - (No Content)
 
 ```HTTP
-POST /tennisCourtsGalway/addTennisCourt HTTP/1.1 200
+HTTP/1.1 200
 Host: tennisCourtsGalway.ie
 "Tennis Court Removed"
 ```
